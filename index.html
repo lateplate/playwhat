@@ -1,33 +1,56 @@
 <!DOCTYPE html>
+<html class="no-js">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7, IE=9, chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>/play loggins</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="" />
-    <link rel="icon" type="image/x-icon" href="" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
-    <body style="text-align:center;margin: 60px 0 0 0">
-      <header>
-         <h1>/play loggins</h1>
+  <body>
+    <div class="header-container">
+      <header class="wrapper clearfix">
+        <h1 class="title">/play loggins</h1>
       </header>
-      <section>
-        <p>
-          <audio id="loggins" autoplay="autoplay">
-            <source src="assets/loggins.mp3" type="audio/mpeg">
-            <source src="assets/loggins.ogg" type="audio/ogg">
-            Your browser does not support this audio format.
-          </audio>
-          <img src="assets/loggins.jpg" onclick="document.getElementById('loggins').play()" style="cursor: pointer;">
-        </p>
-      </section>
-      <footer>
-        <p>
-          <a title="Download Flint" href="http://giantcomet.com/flint/">Download Flint - a Campfire client for Mac</a>
-        </p>
-        <p>
-          <a title="Colleaguery" href="http://twitter.com/aaronsalmon">Colleaguery</a>
-        </p>
-      </footer>
-    </body>
-  </html>
+    </div>
+    <div class="main-container">
+      <div class="main wrapper clearfix">
+        <section>
+          <p>
+            <audio id="loggins" autoplay="autoplay">
+              <source src="assets/loggins.mp3" type="audio/mpeg">
+              <source src="assets/loggins.ogg" type="audio/ogg">
+              Your browser does not support this audio format. :`(
+            </audio>
+            <img class="thatface" src="assets/img/loggins.jpg" onclick="document.getElementById('loggins').play()">
+          </p>
+          <p>
+            <a title="Download Flint" href="http://giantcomet.com/flint/">Download Flint - a Campfire client for Mac</a>
+          </p>
+          <p>
+            <a title="Colleaguery" href="http://twitter.com/aaronsalmon">Colleaguery</a>
+          </p>
+        </section>
+      </div> <!-- #main -->
+    </div> <!-- #main-container -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script>
+     $.backstretch(["assets/img/bg.png"]);
+   </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42059832-1', 'playloggins.com');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
