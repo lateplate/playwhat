@@ -99,11 +99,13 @@ a:hover {
 }
 
 h1 {
-    background: url('../img/title.png') no-repeat center center;
-    text-indent: -9999px;
+    /*background: url('../img/title.png') no-repeat center center;*/
+    /*text-indent: -9999px;*/
+    font-family: Georgia, serif;
+    font-size: 36px;
     background-size: contain;
     width: 100%;
-    height: 70px;
+    height: 40px;
     max-width: 450px;
     min-width: 250px;
     margin: 0 auto;
